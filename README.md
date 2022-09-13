@@ -2,7 +2,9 @@
 
 Neste desafio foi utilizado conceitos avançados de React em três diferentes telas, sendo a primeira (home page) do aplicativo onde podemos selecionar o café e sua quantidade, tendo uma resposta visual imediata de quantos item diferentes foram adicionados ao carrinho localizado no canto superior direito; na segunda tela podemos preencher as informações de endereço para entrega, a forma desejada de pagamento e se necessário alterar/ deletar itens do pedido, e por fim, na tela de sucesso temos a confirmação do pedido retornando um resumo geral das informações do pedido.
 
-🚀 Nesse projeto foi utilizado as seguintes tecnologias
+<br />
+
+🚀 Nesse projeto foram utilizadas as seguintes tecnologias
 
 * Vite
 * Styled Components
