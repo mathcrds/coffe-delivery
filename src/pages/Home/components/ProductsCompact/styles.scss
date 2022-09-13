@@ -1,0 +1,177 @@
+.confirmPaymentItemsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px 4px;
+
+    width: 368px;
+    height: 100px;
+
+    background: #F3F2F2;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    border-bottom: 1px solid #E6E5E5;
+
+    margin-bottom: 1.5rem;
+    
+    img {
+        position: relative;
+        width: 64px;
+        height: 64px;
+    }
+
+    h1 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        color: #403937;
+    }
+
+    .itemAddedTitle {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 8px;
+        
+
+        input {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            gap: 4px;
+
+            width: 72px;
+            height: 32px;
+
+            border: none;
+
+
+            background: #E6E5E5;
+            border-radius: 6px;
+
+
+        }
+
+        .removeButton {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 8px;
+            gap: 4px;
+
+            height: 32px;
+
+            border: none;
+
+            background: #E6E5E5;
+            border-radius: 6px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 160%;
+
+            text-transform: uppercase;
+
+            color: #574F4D;
+
+        }
+
+        .actionButtons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 8px;
+
+            width: 171px;
+            height: 32px;
+
+            .iconButtonWrapper {
+                width: 85px;
+                height: 32px;
+    
+                flex: 1;
+                background: var(--base-button);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+                border-radius: 6px;
+    
+                padding: 0.5rem;
+    
+                .iconIncreaseDecrease {
+                    width: 2.875rem;
+                    height: 2.875rem;
+                    border: none;
+                    background: none;
+                    color: var(--purple);
+                    transition: 0.4s;
+    
+                    cursor: pointer;
+    
+                    &:disabled {
+                        opacity: 0.4;
+                    }
+    
+                    &:not(:disabled):hover {
+                        color: var(--purple-dark);
+                    }
+                }
+    
+                input {
+                    text-align: center;
+                    width: 100%;
+                    background:none;
+                    border: none;
+                    color: var(--base-title);
+    
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    span {
+        width: 70px;
+        height: 21px;
+
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+
+        display: flex;
+        align-items: center;
+        text-align: right;
+
+
+        color: #574F4D;
+    }
+
+}
+
+.confirmPaymentItemsWrapper + .confirmPaymentItemsWrapper{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}

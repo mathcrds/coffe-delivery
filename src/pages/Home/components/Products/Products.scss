@@ -1,0 +1,404 @@
+.productWrapper {
+    position: relative;
+    width: 256px;
+    height: 310px;
+    left: 0px;
+    top: 0px;
+
+    background: #F3F2F2;
+    border-radius: 6px 36px;
+
+    img {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        left: calc(50% - 120px/2);
+        top: -20px;
+    }
+
+    & > span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+
+        width: 81px;
+        height: 21px;
+
+        background: var(--yellow-light);
+        color: var(--yellow-dark);
+
+        font-size: 10px;
+        font-weight: 700;
+        border-radius: 100px;
+
+        position: absolute;
+        left: calc(50% - 81px/2);
+        top: 112px;
+
+    }
+
+    h1 {
+        position: absolute;
+        height: 26px;
+        left: 20px;
+        right: 20px;
+        top: 149px;
+
+        font-family: 'Baloo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        color: #403937;
+
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-top: 0.5rem;
+        position: absolute;
+        height: 36px;
+        left: 20px;
+        right: 20px;
+        top: 183px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+
+        text-align: center;
+        
+        color: #8D8686; 
+    }
+
+    .priceAndCheckout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 1px;
+
+        position: absolute;
+        height: 38px;
+        left: 24px;
+        right: 24px;
+        bottom: 20px;
+
+        
+
+        .rs {
+            width: 67px;
+            height: 31px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+
+            text-align: right;
+
+            color: #574F4D;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .priceText {
+            width: 67px;
+            height: 31px;
+            
+            font-family: 'Baloo 2';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 130%;
+            margin-right: 2rem;
+            
+            text-align: right;
+            
+            color: #574F4D;
+            
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        input {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            gap: 4px;
+
+            width: 72px;
+            height: 38px;
+
+            background: #E6E5E5;
+            border-radius: 6px;
+
+            border: none;
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            gap: 8px;
+
+            width: 38px;
+            height: 38px;
+
+            background: #4B2995;
+            color: var(--white);
+            border-radius: 6px;
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+
+            border: none;
+
+            cursor: pointer;
+
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background: var(--purple);
+            }
+        }
+    }
+
+
+}
+
+.productWrapper {
+    position: relative;
+    width: 256px;
+    height: 310px;
+    left: 0px;
+    top: 0px;
+
+    background: #F3F2F2;
+    border-radius: 6px 36px;
+
+    img {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        left: calc(50% - 120px/2);
+        top: -20px;
+    }
+
+    & > span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+
+        width: 81px;
+        height: 21px;
+
+        background: var(--yellow-light);
+        color: var(--yellow-dark);
+
+        font-size: 10px;
+        font-weight: 700;
+        border-radius: 100px;
+
+        position: absolute;
+        left: calc(50% - 81px/2);
+        top: 112px;
+    }
+
+    h1 {
+        position: absolute;
+        height: 26px;
+        left: 20px;
+        right: 20px;
+        top: 149px;
+
+        font-family: 'Baloo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #403937;
+    }
+
+    p {
+        position: absolute;
+        height: 36px;
+        left: 20px;
+        right: 20px;
+        top: 183px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+
+        text-align: center;
+
+        color: #8D8686;
+    }
+
+    .priceAndCheckout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 13px;
+
+        position: absolute;
+        height: 38px;
+        left: 24px;
+        right: 24px;
+        bottom: 20px;
+
+        .iconButtonWrapper {
+            width: 72px;
+            height: 38px;
+
+            flex: 1;
+            background: var(--base-button);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            border-radius: 6px;
+
+            padding: 0.5rem;
+
+            margin-left: -1rem;
+
+            .iconIncreaseDecrease {
+                width: 2.875rem;
+                height: 2.875rem;
+                border: none;
+                background: none;
+                color: var(--purple);
+                transition: 0.4s;
+
+                cursor: pointer;
+
+                &:disabled {
+                    opacity: 0.4;
+                }
+
+                &:not(:disabled):hover {
+                    color: var(--purple-dark);
+                }
+            }
+
+            input {
+                text-align: center;
+                width: 100%;
+                background: none;
+                border: none;
+                color: var(--base-title);
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .rs {
+            width: 67px;
+            height: 31px;
+
+            margin-right: 0.5rem;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+
+            text-align: right;
+
+            color: #574F4D;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .priceText {
+            width: 67px;
+            height: 31px;
+
+            font-family: 'Baloo 2';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 130%;
+
+            text-align: right;
+
+            color: #574F4D;
+
+            margin-right: 1.5rem;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+
+
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            gap: 8px;
+
+            width: 38px;
+            height: 38px;
+
+            background: #4B2995;
+            border-radius: 6px;
+
+            color: var(--white);
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+
+            border: none;
+
+            transition: ease-in 0.1s;
+
+            &:hover {
+                background: var(--purple);
+            }
+        }
+    }
+}

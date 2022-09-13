@@ -1,0 +1,541 @@
+.checkoutWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    .adressAndPayment {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 12px;
+
+        position: relative;
+
+        h1 {
+            font-family: 'Baloo 2';
+            font-size: 18px;
+            line-height: 130%;
+
+            color: var(--base-subtitle);
+
+            margin-top: 2rem;
+        }
+
+        .adressInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 40px;
+            gap: 32px;
+        
+            width: 640px;
+            height: 372px;
+        
+            background: var(--base-card);
+            border-radius: 6px;
+        
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+
+            .adressTitleAndSubtitle {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+
+                width: 560px;
+                height: 44px;
+
+                h2 {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 130%;
+
+                    display: flex;
+                    align-items: center;
+
+                    color: var(--base-subtitle);
+                    gap: 8px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 130%;
+
+                    display: flex;
+                    align-items: center;
+
+                    color: var(--base-text);
+
+                    margin-left: 1.9rem;
+                }
+            }
+
+            .adressInputsForm {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 16px;
+
+                width: 560px;
+                height: 216px;
+
+                flex: none;
+                order: 1;
+                align-self: stretch;
+                flex-grow: 0;
+
+                span {
+                    font-size: 0.9rem;
+                    position: absolute;
+
+                    top: 12rem;
+                    right: 2.5rem;
+
+                    color: var(--base-error);
+                }
+
+                #cep {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 12px;
+                    gap: 4px;
+                    
+                    width: 200px;
+                    height: 42px;
+                    
+                    background: #EEEDED;
+                    
+                    border: 1px solid #E6E5E5;
+                    border-radius: 4px;
+                    
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0; 
+                }
+
+                #rua {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 12px;
+                    gap: 4px;
+
+                    width: 560px;
+                    height: 42px;
+
+                    background: #EEEDED;
+
+                    border: 1px solid #E6E5E5;
+                    border-radius: 4px;
+
+                    flex: none;
+                    align-self: stretch;
+                    flex-grow: 0;
+                }
+
+                .numeroComplemento{
+                    display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 12px;
+
+                width: 560px;
+                height: 42px;
+                    
+                    #numero {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 12px;
+                        gap: 4px;
+    
+                        width: 200px;
+                        height: 42px;
+    
+                        background: #EEEDED;
+    
+                        border: 1px solid #E6E5E5;
+                        border-radius: 4px;
+    
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+                    }
+
+                    #complemento {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 12px;
+                        gap: 4px;
+    
+                        width: 348px;
+                        height: 42px;
+    
+                        background: #EEEDED;
+    
+                        border: 1px solid #E6E5E5;
+                        border-radius: 4px;
+    
+                        flex: none;
+                        order: 1;
+                        flex-grow: 1;
+                    }
+                }
+
+                .bairroCidadeComplemento {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 12px;
+
+                    width: 560px;
+                    height: 42px;
+
+                    flex: none;
+                    order: 3;
+                    align-self: stretch;
+                    flex-grow: 0;
+
+                    #bairro {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 12px;
+                        gap: 4px;
+    
+                        width: 200px;
+                        height: 42px;
+    
+                        background: #EEEDED;
+    
+                        border: 1px solid #E6E5E5;
+                        border-radius: 4px;
+    
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+                    }
+    
+                    #cidade {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 12px;
+                        gap: 4px;
+    
+                        width: 276px;
+                        height: 42px;
+    
+                        background: #EEEDED;
+    
+                        border: 1px solid #E6E5E5;
+                        border-radius: 4px;
+    
+                        flex: none;
+                        order: 1;
+                        flex-grow: 1;
+                    }
+    
+                    #uf {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 12px;
+                        gap: 4px;
+    
+                        width: 60px;
+                        height: 42px;
+    
+                        background: #EEEDED;
+    
+                        border: 1px solid #E6E5E5;
+                        border-radius: 4px;
+    
+                        flex: none;
+                        order: 2;
+                        flex-grow: 0;
+                    }
+                }
+
+                
+            }
+        }
+
+        .paymentWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 40px;
+            gap: 32px;
+
+            width: 640px;
+            height: 207px;
+
+            background: #F3F2F2;
+            border-radius: 6px;
+
+            .paymentTitleAndSubtitle {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+
+                width: 560px;
+
+                margin-top: -2rem;
+
+                h1 {
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 130%;
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #403937;
+                    gap: 8px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 130%;
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #574F4D;
+
+                    margin-left: 1.9rem;
+                }
+
+                }
+
+                .paymentOptions {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 12px;
+    
+                    width: 560px;
+                    height: 51px;
+    
+                    .paymentMethods {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0px;
+                        gap: 12px;
+    
+                        width: 560px;
+                        height: 51px;
+    
+    
+    
+                        flex: none;
+                        order: 1;
+                        align-self: stretch;
+                        flex-grow: 0;
+                    }
+                }
+        }
+    }
+
+
+    .finalCheckoutWrapper {
+
+        .titleRightWrapper {
+            font-family: 'Baloo 2';
+            font-size: 18px;
+            line-height: 130%;
+
+            color: var(--base-subtitle);
+
+            margin-bottom: 0.8rem;
+            margin-top: 2rem;
+        }
+
+        .finalCheckout {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
+        gap: 24px;
+
+        position: relative;
+        min-width: 448px;
+        min-height: 498px;
+
+        background: var(--base-card);
+        border-radius: 6px 44px;
+        
+          
+
+        .totalPayment {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 12px;
+
+            width: 368px;
+            height: 92px;
+
+            .frame1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                gap: 8px;
+
+                width: 368px;
+                height: 21px;
+
+
+                /* Inside auto layout */
+
+
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 130%;
+                /* or 18px */
+
+                display: flex;
+                align-items: center;
+                text-align: right;
+
+                /* Base/Text */
+
+                color: #574F4D;
+            }
+
+            .frame2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                gap: 8px;
+
+                width: 368px;
+                height: 21px;
+
+
+                /* Inside auto layout */
+
+
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 130%;
+                /* or 18px */
+
+                display: flex;
+                align-items: center;
+                text-align: right;
+
+                /* Base/Text */
+
+                color: #574F4D;
+            }
+
+            .frame3 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                gap: 8px;
+
+                width: 368px;
+                height: 26px;
+
+                h1 {
+                    height: 26px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 130%;
+                    /* identical to box height, or 26px */
+
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+
+                    /* Base/Subtitle */
+
+                    color: #403937;
+                }
+            }
+
+            #confirm-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 8px;
+                gap: 4px;
+
+                width: 368px;
+                height: 46px;
+
+                border: none;
+
+
+                background: #DBAC2C;
+                border-radius: 6px;
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 160%;
+                /* or 22px */
+
+                text-transform: uppercase;
+
+                /* Base/White */
+
+                color: #FFFFFF;
+                font-stretch: 100;
+
+                &:hover {
+                    background: var(--yellow-dark);
+                }
+
+                &:disabled {
+                    background: var(--yellow);
+                    opacity: 0.5;
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }}
+}

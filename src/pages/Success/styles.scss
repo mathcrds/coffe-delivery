@@ -1,0 +1,219 @@
+.titleText {
+    h1 {
+        position: absolute;
+        width: 353px;
+        height: 42px;
+        left: calc(50% - 353px/2 - 383.5px);
+        top: 184px;
+
+        font-family: 'Baloo 2';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 130%;
+
+        color: var(--yellow-dark);
+    }
+
+    p {
+        position: absolute;
+        width: 552px;
+        height: 26px;
+        left: calc(50% - 552px/2 - 284px);
+        top: 230px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+
+        color: var(--base-subtitle);
+        font-stretch: 100;
+    }
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 32px;
+
+    position: absolute;
+    width: 526px;
+    height: 270px;
+    left: calc(50% - 526px/2 - 297px);
+    top: 296px;
+
+    border-radius: 6px 36px;
+
+    border: 1px solid var(--purple);
+
+    .local {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;
+
+        width: 354px;
+        height: 42px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        .mapPin {
+            padding: 8px;
+            gap: 8px;
+
+            width: 32px;
+            height: 32px;
+
+            background: var(--purple);
+            border-radius: 1000px;
+        }
+
+        p {
+            width: 310px;
+            height: 42px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+
+            color: #574F4D;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+    }
+
+    .time {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;
+
+        width: 185px;
+        height: 42px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+        .timer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            gap: 8px;
+
+            width: 32px;
+            height: 32px;
+
+            background: var(--yellow);
+            border-radius: 1000px;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        p {
+            width: 141px;
+            height: 42px;
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+
+            color: #574F4D;
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+    }
+
+    .payment {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;
+
+        width: 206px;
+        height: 42px;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+
+        .currencyDollar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            gap: 8px;
+
+            width: 32px;
+            height: 32px;
+
+            background: var(--yellow-dark);
+            border-radius: 1000px;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        p {
+            width: 162px;
+            height: 42px;
+
+            /* Text/Regular M */
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            /* or 21px */
+
+
+            /* Base/Text */
+
+            color: #574F4D;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+    }
+
+}
+
+
+.bodyImage {
+    position: absolute;
+    width: 492px;
+    height: 293px;
+    left: calc(50% - 492px/2 + 314px);
+    top: 284px;
+}
