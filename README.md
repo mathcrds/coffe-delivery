@@ -17,6 +17,6 @@ Neste desafio foi utilizado conceitos avançados de React em três diferentes te
 
 <br />
 
-<a href="https://coffee-delivery-mathcrds.vercel.app target="_blank">
+<a href="https://coffee-delivery-mathcrds.vercel.app/" target="_blank">
 Link para o deploy (Coffe Delivery)
 </a>
